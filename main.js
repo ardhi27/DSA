@@ -1,27 +1,10 @@
-const number1 = 234;
-const numberToString = number1.toString().split('').map(Number)
+const arr = [[1, 2, 3, 4, 5], [2, 5, 6, 7, 8]]
 
-const subtract = subtractProduct(234)
-const add = addProduct(234)
-
-console.log(subtract - add)
-
-
-function subtractProduct(n){
-    const toNumber = n.toString().split('').map(Number)
-    let multiplyNumber = 1
-    for(const num of toNumber){
-        multiplyNumber *= num;
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+        if (arr[i][j] % 2 == 0) {
+            console.log(arr[i])
+            break;
+        }
     }
-    return multiplyNumber
-}
-
-function addProduct(n){
-    const toNumber = n.toString().split('').map(Number)
-    let sum = 0
-    for(const num of toNumber){
-         sum += num
-    }
-
-    return sum
 }
