@@ -1,30 +1,31 @@
-class Person{
-    name;
-    age;
-    address;
-  constructor(name, age, address){
+class Person {
+  name;
+  age;
+  address;
+  
+  constructor(name, age, address) {
     this.name = name;
     this.age = age;
     this.address = address
   }
 
-  setName(name){
+  setName(name) {
     this.name = name
   }
-  setAge(age){
+  setAge(age) {
     this.age = age;
   }
-  setAddress(address){
+  setAddress(address) {
     this.address = address;
   }
 
-  getName(){
+  getName() {
     return this.name
   }
-  getAge(){
+  getAge() {
     return this.age
   }
-  getAddress(){
+  getAddress() {
     return this.address
   }
 
